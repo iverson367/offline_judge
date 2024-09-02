@@ -1,0 +1,3 @@
+[submodule "thirdparty/Leetcode-Solutions"]
+	path = thirdparty/Leetcode-Solutions
+	url = https://github.com/kamyu104/LeetCode-Solutions
