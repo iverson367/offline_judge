@@ -29,3 +29,25 @@ public:
 private:
 	std::chrono::high_resolution_clock::time_point _start;
 };
+
+struct ListNode {
+	int val;
+	ListNode* next;
+	ListNode() : val(0), next(nullptr) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode* next) : val(x), next(next) {}
+};
+
+bool isEqual(ListNode* left, ListNode* right)
+{
+	if (left != nullptr)
+	{
+		if (right != nullptr)
+			return left->val == right->val && isEqual(left->next, right->next);
+		return false;
+	}
+	else
+	{
+		return right == nullptr;
+	}
+}
