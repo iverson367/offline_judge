@@ -17,6 +17,8 @@ onlinejudge有几个问题
 
 主要思想是通过创建随机或固定的测试输入数据，从dmoj可以得到指定题目的正确代码，编译正确代码，运行，就可以得到测试用的参考输出数据，作为我们自己写程序的参考。
 
+dmoj 
+
 主要流程是： 以https://dmoj.ca/problem/16bitswonly 为例
 
 使用系统：windows
