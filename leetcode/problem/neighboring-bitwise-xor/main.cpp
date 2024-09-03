@@ -12,19 +12,7 @@ namespace usercode
 	public:
 		bool doesValidArrayExist(vector<int> &derived)
 		{
-			std::vector<int> result;
-			result.resize(derived.size());
-			result[0] = 0;
-			for (int i = 0; i < derived.size(); i++)
-			{
-				if (i < derived.size() - 1)
-				{
-					if (derived[i])
-						result[i + 1] = 1 - result[i];
-					else result[i + 1] = result[i];
-				}
-			}
-			return derived[derived.size() - 1] == (result[derived.size() - 1] ^ result[0]);
+			return false;//to do
 		}
 	};
 }
